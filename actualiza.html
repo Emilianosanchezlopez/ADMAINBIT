@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Operación Interna</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- animate min CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="container-wrapper">
+  <!-- NAVBAR
+================================================== -->
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="img/mainbit.png" style="height:40px; top:-10px;position:relative;">
+      </a>
+	  <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Inicio</a></li>
+      <li><a href="#">Actualiza tus datos</a></li>
+      <li><a href="#">Envíar datos</a></li>
+     
+    </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+	</div>
+
+    <div class="container " >
+
+
+	  
+      <div class="row">
+	  <!--inicia main container -->
+	  
+	<div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Datos del usuario</div>
+  <div class="panel-body">
+    <p></p>
+  </div>
+
+  <!-- Table -->
+  <div id="mitabla" class="x_content" >
+				
+				</div>
+  <script>
+function myFunction(arr) {
+    var out = '<table class="table"><thead><tr> <th>Nombre</th> <th>Title</th> <th>Mail</th> <th>Department</th> </tr></thead>';
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += "<tr><td>" + 
+        arr[i].Name +
+        "</td><td>" +
+        arr[i].Pager +
+        "</td><td>" +
+		arr[i].Mail +
+        "</td><td>" +
+        arr[i].Department +
+        "</td></tr>";
+    }
+    out += "</table>";
+    document.getElementById("mitabla").innerHTML = out;
+}
+</script>
+<script src="js/Martin.json"></script>
+		
+		
+      </div><!-- termina Main container -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Volver arriba</a></p>
+        <p>Subdirección de Soluciones Tecnológicas © <span id="anioactual">2016</span> Todos los derechos reservados.
+                        </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+	<script>
+        		var d = new Date();
+				document.getElementById("anioactual").innerHTML = d.getFullYear();
+        </script>
+  </body>
+</html>

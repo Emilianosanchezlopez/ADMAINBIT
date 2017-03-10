@@ -1,0 +1,10 @@
+#suiteBar *, #s4-ribbonrow *, #s4-titlerow, /*Suitebar and ribbon row*/
+.ms-webpart-menuLink,/*webpart drop down arrow*/
+.ms-bottompaging,/*page row arrows*/
+.ms-csrlistview-controldiv,/*list view search box*/
+.ms-dlgCloseBtn /*close button in dialogs*/*{
+ -moz-box-sizing: content-box:
+ -webkit-box-sizing: content-box;
+ box-sizing: content-box;
+
+}
