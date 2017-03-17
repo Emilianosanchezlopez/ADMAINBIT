@@ -1,4 +1,3 @@
-myFunction([
  {
    "Name": "Diana Torres",
    "Title": "Consultor Jr",
@@ -39,4 +38,3 @@ myFunction([
    "Department": "Subdirección de Calidad",
    "Company": "Mainbit"
  }
-])
